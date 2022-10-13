@@ -1,5 +1,5 @@
 node("jayarajlabel") {
    stage("build") {
-     sh "cd /home/jenkins/remote/workspace/scripted-pipeline && mvn package"
+     sh "cd /home/jenkins/remote/workspace/scripted-pipeline/spring-petclinic && mvn package"
     }
    }
