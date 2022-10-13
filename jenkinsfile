@@ -5,3 +5,4 @@ node("jayarajlabel") {
    stage("build") {
      sh "cd /home/jenkins/remote/workspace/scripted-pipeline && mvn package"
     }
+}
