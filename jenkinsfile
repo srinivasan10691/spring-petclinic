@@ -1,5 +1,7 @@
 node("jayarajlabel") {
-   stage("build") {
-     sh "cd /home/jenkins/remote/workspace/scripted-pipeline/spring-petclinic && mvn package"
-    }
+  stage("getcode") {
+    sh "git clone https://github.com/srinivasan10691/spring-petclinic.git && cd spring-petclinic"
    }
+   stage("build") {
+     sh "cd /home/jenkins/remote/workspace/scripted-pipeline && mvn package"
+    }
